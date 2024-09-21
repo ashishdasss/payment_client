@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Success from './Success';
 import Failed from './Failed';
 import  Home  from './Home';
-export const base_url = "https://payment-server-2.vercel.app/"
+export const base_url = "https://payment-server-2.vercel.app"
 
 
 function App() {
