@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import axios from 'axios'
 import ReCAPTCHA from 'react-google-recaptcha'
+import { base_url } from "./App";
 
 function Home() {
 
@@ -13,7 +14,7 @@ function Home() {
         return;
       }
 
-      let res = await axios.post('http://localhost:8000/payment', {
+      let res = await axios.post(`${base_url}/payment`, {
         'captcha': captchaValue
       });
       console.log(res);
